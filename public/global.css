@@ -1,0 +1,43 @@
+:root {
+  --default-color: #3e4450;
+  --primary-color: #4d2aee;
+  --secondary-color: #dc36b3;
+  --accent-color: #67cabe;
+  --primary-font-color: #fff;
+  --secondary-font-color: #1e2734;
+  --link-font-color: #4d2aee;
+  --footer-link: rgb(160, 160, 160);
+  --bg-color: #f9fafb;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+pre {
+  background-color: var(--secondary-font-color);
+  padding: 0.3rem 0.5rem;
+  border-radius: 1rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  max-width: 350px;
+}
