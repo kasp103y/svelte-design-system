@@ -146,38 +146,82 @@
           <code>{`<Avatar type="large"/>`}</code>
         </pre>
           </div>
-
-          <Avatar type="medium" name="K" image="false" />
-          <Avatar type="small" name="K" />
+          <div>
+            <Avatar type="medium" name="K" image="false" />
+            <pre>
+          <code>{`<Avatar type="medium"/>`}</code>
+        </pre>
+          </div>
+          <div>
+            <Avatar type="small" name="K" />
+            <pre>
+          <code>{`<Avatar type="small"/>`}</code>
+        </pre>
+          </div>
         </article>
         <article class="sizes avatar">
-          <Avatar type="large" mode="indicator" name="AD" image="false" />
-          <Avatar type="medium" mode="indicator" name="K" />
-          <Avatar type="small" mode="indicator" name="K" />
+          <div>
+            <Avatar type="large" mode="indicator" name="K" />
+            <pre>
+          <code>{`<Avatar type="large" mode="indicator/>`}</code>
+        </pre>
+          </div>
+          <div>
+            <Avatar type="medium" name="K" image="false" />
+            <pre>
+          <code>{`<Avatar type="medium" mode="indicator/>/>`}</code>
+        </pre>
+          </div>
+          <div>
+            <Avatar type="small" name="K" />
+            <pre>
+          <code>{`<Avatar type="small" mode="indicator/>/>`}</code>
+        </pre>
+          </div>
         </article>
       </section>
     </section>
   </section>
 </main>
-<Footer
+<div class="foot">
+  <h4>Import footer in your <code>{"<script>"}</code> tag</h4>
+  <pre>
+          <code>{`import Footer from "./Footer.svelte";`}</code>
+        </pre>
+  <pre>
+          <code
+      >{`<Footer
   links={["Branding", "Design", "Marketing", "Advertisement"]}
   links2={["About us", "Contact", "Jobs", "Press kit"]}
   links3={["Terms of use", "Privacy policy", "Cookie policy"]}
-/>
+/>`}</code
+    >
+        </pre>
+  <Footer
+    links={["Branding", "Design", "Marketing", "Advertisement"]}
+    links2={["About us", "Contact", "Jobs", "Press kit"]}
+    links3={["Terms of use", "Privacy policy", "Cookie policy"]}
+  />
+</div>
 
 <style>
-  .avatar article {
+  /* .avatar article {
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
-    align-items: center;
-  }
+    align-items: end;
+  } */
 
   /*   .grid-ui {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
   } */
+
+  .foot h4,
+  .foot pre {
+    margin-left: 2rem;
+  }
 
   main {
     display: grid;
@@ -191,11 +235,6 @@
     margin-top: 2rem;
     border-radius: 1rem;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
-  }
-
-  .card-avatar {
-    display: flex;
-    gap: 1rem;
   }
 
   .ting {

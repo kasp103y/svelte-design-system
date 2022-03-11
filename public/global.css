@@ -38,6 +38,6 @@ pre {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1rem 0;
-  max-width: 350px;
+  margin: 2rem 5rem;
+  max-width: 600px;
 }
